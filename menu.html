@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport" />
+   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+   <link rel="stylesheet" href="style.css">
+   <title>Smoothie Bar</title>
+
+   <script>
+       function myFunction(x) {
+         x.classList.toggle("change");
+         document.getElementById("mySidenav").style.width = "100%";
+       }
+
+       function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+       }
+       </script>
+ </head>
+ <body
+   <!-- Navigation -->
+   <section class="nav">
+     <div class="logo">
+     </div>
+
+     <div class="nav-menu">
+       <ul>
+         <li>
+           <a href="index.html">home</a>
+         </li>
+         <li>
+             <a href="about.html">about</a>
+         </li>
+         <li>
+             <a href="contact.html">contact</a>
+         </li>
+       </ul>
+     </div>
+     <div class="hamburger-icon" onclick="myFunction(this)">
+       <div class="bar1"></div>
+       <div class="bar2"></div>
+       <div class="bar3"></div>
+     </div>
+
+     <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="index.html" onclick="closeNav()"class="btn">Logo</a>
+       <a href="about.html" onclick="closeNav()"class="btn">About</a>
+       <a href="contact.html" onclick="closeNav()"class="btn">Contact</a>
+     </div>
+     <!-- <div class="logo">
+       <div class="logoimage">
+         <img src="SmoothieImages/logo.png" alt="logoimage">
+       </div>
+     </div>
+     <div class="about">
+       <span>About</span>
+     </div>
+     <div class="contact">
+       <span>Contact</span>
+     </div> -->
+   </section>
+   <!-- Navigation -->
+   <!-- Content -->
+   <section class="content">
+       <h1>Menu</h1>
+   </section>
+
+ <!-- Content -->
+ <!-- Footer -->
+<section class="footer">
+ <div class="hours">
+   <h3>HOURS</h3>
+   <p>Mondays-Fridays: 07.30am-17.00pm</p>
+   <p>Weekends(Sat&Sun): 08.30am-15.30pm</p>
+ </div>
+ <div class="address">
+   <h3>Address</h3>
+   <p>1 Stepeney Road,Shop No.4,Parklands,7441</p>
+ </div>
+ <div class="comments">
+   <h3>Feedback</h3>
+   <p>"The best healthy smoothie bar in town with a wide variety  to selet from!"</p>
+   <p>"Amazing, yummy and filling smoothies! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+ </div>
+ <div class="copyrights">
+   <p>&copy;A.M's Smoothies Bar 2019</p>
+ </div>
+</section>
+ <!-- Footer -->
+ </body>
+</html>
